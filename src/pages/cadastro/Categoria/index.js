@@ -43,13 +43,15 @@ function Categoria() {
                     value={values.nome}
                     onChange={handleChange}
                 />
-                <div>
-                    <label>
-                        Descrição
-                        <textarea value={values.descricao} name="descricao" onChange={(e) => handleChange(e)}></textarea>
-                    </label> 
-                </div>
                 <FormField
+                    textarea
+                    label='Descrição da categoria'
+                    name='descricao'
+                    value={values.descricao}
+                    onChange={handleChange}
+                />
+                <FormField
+                    input
                     label='Cor da categoria'
                     name='cor'
                     type='color'
