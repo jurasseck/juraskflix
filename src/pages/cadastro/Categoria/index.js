@@ -51,7 +51,6 @@ function Categoria() {
                     onChange={handleChange}
                 />
                 <FormField
-                    input
                     label='Cor da categoria'
                     name='cor'
                     type='color'
