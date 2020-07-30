@@ -1,19 +1,16 @@
-import React, { Component } from 'react'
-import DefaultLayout from '../../../layouts/DefaultLayout'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import DefaultLayout from '../../../layouts/DefaultLayout';
 
-const Video = class Video extends Component {
-
-    render() {
-        return (
-            <DefaultLayout>
-                <h1>Cadastro de Vídeo</h1>
-                <Link to="/cadastro/categoria">
-                    Cadastro de Categoria
-                </Link>
-            </DefaultLayout>
-        )
-    }
+function Video() {
+  return (
+    <DefaultLayout>
+      <h1>Cadastro de Vídeo</h1>
+      <Link to="/cadastro/categoria">
+        Cadastro de Categoria
+      </Link>
+    </DefaultLayout>
+  );
 }
 
-export default Video
+export default Video;
